@@ -20,7 +20,17 @@ The API can be called in an interactive way, and also as a single API called fro
 
 
 
-## Requirements
+## Usage
+
+Clone repository with all the submodules:
+```bash
+git clone --recursive https://github.com/hdnh2006/YOLOv5API.git
+```
+
+Or if you have already cloned the repository without the submodule content, you can fetch it with:
+```bash
+git submodule update --init
+```
 
 Python 3.8 or later with all [requirements.txt](requirements.txt) dependencies installed, including `torch>=1.7`. To install run:
 
