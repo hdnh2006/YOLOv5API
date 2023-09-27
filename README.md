@@ -2,9 +2,13 @@
   <img width="450" src="assets/Flask_logo.svg">
 </div>
 
-# Yolov8 Flask API for detection and segmentation
+# Yolov5 Flask API for detection and segmentation
 
-<a href="https://www.buymeacoffee.com/hdnh2006" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+<div align="center">
+  <a href="https://www.buymeacoffee.com/hdnh2006" target="_blank">
+    <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee">
+  </a>
+</div>
 
 ![Screen GIF](assets/screen.gif)
 
@@ -30,7 +34,7 @@ $ pip3 install -r requirements.txt
 
 ```bash
 Usage - sources:
-    $ python detect_api.py --weights yolov8s.pt --source 0                               # webcam
+    $ python detect_api.py --weights yolov5s.pt --source 0                               # webcam
                                                          img.jpg                         # image
                                                          vid.mp4                         # video
                                                          screen                          # screenshot
@@ -41,17 +45,17 @@ Usage - sources:
                                                          'https://youtu.be/Zgi9g1ksQHc'  # YouTube
                                                          'rtsp://example.com/media.mp4'  # RTSP, RTMP, HTTP stream
 Usage - formats:
-    $ python detect_api.py --weights yolov8s.pt                 # PyTorch
-                                     yolov8s.torchscript        # TorchScript
-                                     yolov8s.onnx               # ONNX Runtime or OpenCV DNN with --dnn
-                                     yolov8s_openvino_model     # OpenVINO
-                                     yolov8s.engine             # TensorRT
-                                     yolov8s.mlmodel            # CoreML (macOS-only)
-                                     yolov8s_saved_model        # TensorFlow SavedModel
-                                     yolov8s.pb                 # TensorFlow GraphDef
-                                     yolov8s.tflite             # TensorFlow Lite
-                                     yolov8s_edgetpu.tflite     # TensorFlow Edge TPU
-                                     yolov8s_paddle_model       # PaddlePaddle
+    $ python detect_api.py --weights yolov5s.pt                 # PyTorch
+                                     yolov5s.torchscript        # TorchScript
+                                     yolov5s.onnx               # ONNX Runtime or OpenCV DNN with --dnn
+                                     yolov5s_openvino_model     # OpenVINO
+                                     yolov5s.engine             # TensorRT
+                                     yolov5s.mlmodel            # CoreML (macOS-only)
+                                     yolov5s_saved_model        # TensorFlow SavedModel
+                                     yolov5s.pb                 # TensorFlow GraphDef
+                                     yolov5s.tflite             # TensorFlow Lite
+                                     yolov5s_edgetpu.tflite     # TensorFlow Edge TPU
+                                     yolov5s_paddle_model       # PaddlePaddle
 ```
 
 
@@ -61,7 +65,7 @@ Usage - formats:
 
 ```bash
 Usage - sources:
-    $ python segment_api.py --weights yolov8s-seg.pt --source 0                               # webcam
+    $ python segment_api.py --weights yolov5s-seg.pt --source 0                               # webcam
                                                                   img.jpg                         # image
                                                                   vid.mp4                         # video
                                                                   screen                          # screenshot
@@ -72,17 +76,17 @@ Usage - sources:
                                                                   'https://youtu.be/Zgi9g1ksQHc'  # YouTube
                                                                   'rtsp://example.com/media.mp4'  # RTSP, RTMP, HTTP stream
 Usage - formats:
-    $ python segment_api.py --weights yolov8s-seg.pt                 # PyTorch
-                                          yolov8s-seg.torchscript        # TorchScript
-                                          yolov8s-seg.onnx               # ONNX Runtime or OpenCV DNN with --dnn
-                                          yolov8s-seg_openvino_model     # OpenVINO
-                                          yolov8s-seg.engine             # TensorRT
-                                          yolov8s-seg.mlmodel            # CoreML (macOS-only)
-                                          yolov8s-seg_saved_model        # TensorFlow SavedModel
-                                          yolov8s-seg.pb                 # TensorFlow GraphDef
-                                          yolov8s-seg.tflite             # TensorFlow Lite
-                                          yolov8s-seg_edgetpu.tflite     # TensorFlow Edge TPU
-                                          yolov8s-seg_paddle_model       # PaddlePaddle
+    $ python segment_api.py --weights yolov5s-seg.pt                 # PyTorch
+                                          yolov5s-seg.torchscript        # TorchScript
+                                          yolov5s-seg.onnx               # ONNX Runtime or OpenCV DNN with --dnn
+                                          yolov5s-seg_openvino_model     # OpenVINO
+                                          yolov5s-seg.engine             # TensorRT
+                                          yolov5s-seg.mlmodel            # CoreML (macOS-only)
+                                          yolov5s-seg_saved_model        # TensorFlow SavedModel
+                                          yolov5s-seg.pb                 # TensorFlow GraphDef
+                                          yolov5s-seg.tflite             # TensorFlow Lite
+                                          yolov5s-seg_edgetpu.tflite     # TensorFlow Edge TPU
+                                          yolov5s-seg_paddle_model       # PaddlePaddle
 ```
 
 ## Classify API
@@ -91,7 +95,7 @@ Usage - formats:
 
 ```bash
 Usage - sources:
-    $ python classify_api.py --weights yolov8s-seg.pt --source 0                               # webcam
+    $ python classify_api.py --weights yolov5s-seg.pt --source 0                               # webcam
                                                                   img.jpg                         # image
                                                                   vid.mp4                         # video
                                                                   screen                          # screenshot
@@ -102,17 +106,17 @@ Usage - sources:
                                                                   'https://youtu.be/Zgi9g1ksQHc'  # YouTube
                                                                   'rtsp://example.com/media.mp4'  # RTSP, RTMP, HTTP stream
 Usage - formats:
-    $ python classify_api.py --weights yolov8s-seg.pt                 # PyTorch
-                                          yolov8s-seg.torchscript        # TorchScript
-                                          yolov8s-seg.onnx               # ONNX Runtime or OpenCV DNN with --dnn
-                                          yolov8s-seg_openvino_model     # OpenVINO
-                                          yolov8s-seg.engine             # TensorRT
-                                          yolov8s-seg.mlmodel            # CoreML (macOS-only)
-                                          yolov8s-seg_saved_model        # TensorFlow SavedModel
-                                          yolov8s-seg.pb                 # TensorFlow GraphDef
-                                          yolov8s-seg.tflite             # TensorFlow Lite
-                                          yolov8s-seg_edgetpu.tflite     # TensorFlow Edge TPU
-                                          yolov8s-seg_paddle_model       # PaddlePaddle
+    $ python classify_api.py --weights yolov5s-seg.pt                 # PyTorch
+                                          yolov5s-seg.torchscript        # TorchScript
+                                          yolov5s-seg.onnx               # ONNX Runtime or OpenCV DNN with --dnn
+                                          yolov5s-seg_openvino_model     # OpenVINO
+                                          yolov5s-seg.engine             # TensorRT
+                                          yolov5s-seg.mlmodel            # CoreML (macOS-only)
+                                          yolov5s-seg_saved_model        # TensorFlow SavedModel
+                                          yolov5s-seg.pb                 # TensorFlow GraphDef
+                                          yolov5s-seg.tflite             # TensorFlow Lite
+                                          yolov5s-seg_edgetpu.tflite     # TensorFlow Edge TPU
+                                          yolov5s-seg_paddle_model       # PaddlePaddle
 ```
 
 
